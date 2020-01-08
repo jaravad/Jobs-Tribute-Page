@@ -17,8 +17,72 @@ body {
 
 h1 {
   font-weight: 300;
+  text-align: center;
+  font-size: 8em;
+  margin: 0;
+  margin-bottom: 0.4em;
 }
 
 h2 {
   font-weight: 100;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3em;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  padding-right: 4em;
+  font-size: 10px;
+}
+
+#image {
+  height: 100vh;
+}
+
+@media (max-width: 900px) {
+  .hero-text {
+    font-size: 8px;
+    width: 60%;
+  }
+
+  #img-div {
+    width: 40%;
+  }
+}
+
+@media (max-width: 450px) {
+  #img-div {
+    display: none;
+  }
+
+  .hero-section {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("/images/steve.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero-text {
+    font-size: 7px;
+    width: 100%;
+    padding: 0;
+  }
+
+  h2 {
+    width: 80%;
+  }
 }

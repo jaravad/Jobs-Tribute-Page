@@ -14,4 +14,4 @@ quotes = [
 
 document
   .getElementById("quote")
-  .appendChild(document.createTextNode('"' + quotes[1] + '"'));
+  .appendChild(document.createTextNode('"' + quotes[3] + '"'));
