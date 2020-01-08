@@ -1,0 +1,194 @@
+$primary: white;
+$dark-1: rgb(30, 30, 30);
+$dark-2: #000000;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: white;
+  background: black;
+}
+
+h1 {
+  font-weight: 300;
+  text-align: center;
+  font-size: 8em;
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+h2 {
+  font-weight: 100;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3em;
+}
+
+p {
+  font-weight: 300;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10em;
+
+  .hero-text {
+    padding-right: 4em;
+    font-size: 10px;
+  }
+
+  .steve {
+    height: 100vh;
+  }
+}
+
+#img-div {
+  max-width: 45em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+}
+
+#img-caption {
+  font-weight: 300;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.photo-section {
+  margin-bottom: 10em;
+}
+
+// ----------timeline----------
+
+.timeline {
+  max-width: 900px;
+  margin: 0 auto;
+
+  .timeline-body {
+    position: relative;
+    background-color: $dark-1;
+    margin-top: 7em;
+    margin-left: 100px;
+    border-radius: 0 8px 8px 0;
+    padding: 5px 0;
+
+    &:after {
+      content: "";
+      width: 4px;
+      height: 100%;
+      background-color: $primary;
+      position: absolute;
+      left: -4px;
+      top: 0;
+    }
+
+    .timeline-item {
+      position: relative;
+
+      &:after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 4px solid $primary;
+        background-color: $dark-1;
+        position: absolute;
+        left: -13px;
+        top: 4px;
+        z-index: 9;
+      }
+
+      .time {
+        position: absolute;
+        left: -85px;
+        top: -7px;
+        opacity: 0.5;
+        font-size: 13px;
+      }
+
+      .content {
+        margin: 30px;
+        padding-bottom: 5px;
+        border-bottom: 1px dashed #555;
+
+        // .title {
+        //   font-weight: 400;
+        //   margin-bottom: 15px;
+        // }
+
+        p {
+          font-weight: 100;
+        }
+      }
+    }
+
+    .timeline-item:last-of-type {
+      .content {
+        border: none;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-section {
+    .hero-text {
+      font-size: 8px;
+      width: 60%;
+    }
+
+    .steve {
+      width: 40%;
+      height: initial;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .hero-section {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("/images/steve.jpg");
+    background-position: center;
+    background-size: cover;
+
+    .hero-text {
+      font-size: 7px;
+      width: 100%;
+      padding: 0;
+    }
+
+    .steve {
+      display: none;
+    }
+
+    h2 {
+      width: 80%;
+    }
+  }
+}
