@@ -1,4 +1,4 @@
-quotes = [
+const quotes = [
   "Stay hungry. Stay foolish.",
   "Your time is limited, so don’t waste it living someone else’s life.",
   "Don’t let the noise of others’ opinions drown out your own inner voice.",
@@ -12,6 +12,6 @@ quotes = [
   "You can’t connect the dots looking forward; you can only connect them looking backward. So you have to trust that the dots will somehow connect in your future."
 ];
 
-document
-  .getElementById("quote")
-  .appendChild(document.createTextNode('"' + quotes[3] + '"'));
+let i = Math.floor(Math.random() * quotes.length);
+const h2 = document.getElementById("quote");
+h2.innerText = quotes[i];
