@@ -21,7 +21,6 @@ body {
   position: relative;
 }
 
-
 h1 {
   font-weight: 300;
   text-align: center;
@@ -47,6 +46,8 @@ p {
   margin: 0 auto;
 }
 
+/* ----------hero-section---------- */
+
 .hero-section {
   height: 100vh;
   display: flex;
@@ -57,12 +58,15 @@ p {
   .hero-text {
     padding-right: 4em;
     font-size: 10px;
+    flex-grow: 1;
   }
 
   .steve {
     height: 100vh;
   }
 }
+
+/* ----------photo-section---------- */
 
 #img-div {
   max-width: 45em;
@@ -85,7 +89,7 @@ p {
   margin-bottom: 10em;
 }
 
-// ----------timeline----------
+/* ----------timeline---------- */
 
 .timeline {
   max-width: 900px;
@@ -154,6 +158,8 @@ p {
   }
 }
 
+/*----------book-section----------*/
+
 .book-div {
   margin-bottom: 7em;
   text-align: center;
@@ -189,6 +195,8 @@ p {
     transform: scale(1.1);
   }
 }
+
+/*----------media-queries----------*/
 
 @media (max-width: 900px) {
   .hero-section {

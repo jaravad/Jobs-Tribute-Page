@@ -44,6 +44,7 @@ p {
   margin: 0 auto;
 }
 
+/* ----------hero-section---------- */
 .hero-section {
   height: 100vh;
   display: -webkit-box;
@@ -61,12 +62,16 @@ p {
 .hero-section .hero-text {
   padding-right: 4em;
   font-size: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .hero-section .steve {
   height: 100vh;
 }
 
+/* ----------photo-section---------- */
 #img-div {
   max-width: 45em;
   width: 80%;
@@ -88,6 +93,7 @@ p {
   margin-bottom: 10em;
 }
 
+/* ----------timeline---------- */
 .timeline {
   max-width: 900px;
   margin: 0 auto 8em;
@@ -153,6 +159,7 @@ p {
   margin-bottom: 0;
 }
 
+/*----------book-section----------*/
 .book-div {
   margin-bottom: 7em;
   text-align: center;
@@ -196,6 +203,7 @@ p {
           transform: scale(1.1);
 }
 
+/*----------media-queries----------*/
 @media (max-width: 900px) {
   .hero-section .hero-text {
     font-size: 8px;
