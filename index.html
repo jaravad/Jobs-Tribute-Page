@@ -2,8 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="This is a tribute page for Steve Jobs, some information about his life can be found here">
-    <meta name="robots" content="index,follow">
+    <meta
+      name="description"
+      content="This is a tribute page for Steve Jobs, some information about his life can be found here"
+    />
+    <meta name="robots" content="index,follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
@@ -12,25 +15,33 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Animation on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="./script.js" defer></script>
+
     <title>Steve Jobs</title>
   </head>
-  <body >
-    
+  <body>
     <div id="main">
       <main>
         <section class="hero-section container">
           <div class="hero-text">
             <h1 id="title">Steve Jobs</h1>
             <h2 id="quote"></h2>
-            <script src="./script.js"></script>
           </div>
-    
+
           <img src="./images/steve.jpg" alt="Steve Jobs" class="steve" />
         </section>
       </main>
-      
-  
-      <section class="container photo-section">
+
+      <section
+        class="container photo-section"
+        data-aos="fade-up"
+        data-aos-offset="400"
+        data-aos-delay="500"
+      >
         <figure id="img-div">
           <img
             src="./images/steve-mac.jpg"
@@ -42,33 +53,34 @@
           </figcaption>
         </figure>
       </section>
-  
+
       <section class="timeline container" id="tribute-info">
-        <h2>Milestones in the life of Steve Jobs</h2>
+        <h2 data-aos="fade-up">Milestones in the life of Steve Jobs</h2>
         <div class="timeline-body">
-          <div class="timeline-item">
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">1955</p>
             <div class="content">
               <p>
                 Steve Jobs is born and spends his early years in the area now
-                known as Silicon Valley, Calif. with his adopted family. Internet
-                rumours place his birthday on Feb. 24.
+                known as Silicon Valley, Calif. with his adopted family.
+                Internet rumours place his birthday on Feb. 24.
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">April, 1976</p>
             <div class="content">
               <p>
-                With high-school buddy Steven Wozniak, Jobs starts Apple Computer.
-                Their first product, Apple I, built in circuit board form, debuts
-                at “the Homebrew Computer Club” in Palo Alto, Calif.
+                With high-school buddy Steven Wozniak, Jobs starts Apple
+                Computer. Their first product, Apple I, built in circuit board
+                form, debuts at “the Homebrew Computer Club” in Palo Alto,
+                Calif.
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">April, 1977</p>
             <div class="content">
               <p>
@@ -77,8 +89,8 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Dec, 1980</p>
             <div class="content">
               <p>
@@ -86,19 +98,19 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Jan, 1983</p>
             <div class="content">
               <p>
-                Apple starts selling the “Lisa,” a desktop computer for businesses
-                with a graphical user interface, the system most users are
-                familiar with today.
+                Apple starts selling the “Lisa,” a desktop computer for
+                businesses with a graphical user interface, the system most
+                users are familiar with today.
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Jan, 1984</p>
             <div class="content">
               <p>
@@ -106,19 +118,19 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Sep, 1985</p>
             <div class="content">
               <p>
-                Jobs is deposed as Apple’s chairman and leaves the company after a
-                boardroom coup that led to the installation of former PepsiCo
+                Jobs is deposed as Apple’s chairman and leaves the company after
+                a boardroom coup that led to the installation of former PepsiCo
                 executive John Sculley as CEO.
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Feb, 1986</p>
             <div class="content">
               <p>
@@ -126,8 +138,8 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">June, 1986</p>
             <div class="content">
               <p>
@@ -137,8 +149,8 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Feb, 1993</p>
             <div class="content">
               <p>
@@ -147,19 +159,19 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Dec, 1996</p>
             <div class="content">
               <p>
-                Apple announces it will buy NeXT for US$400-million and Jobs will
-                act as part-time product strategy advisor to Apple CEO Gilbert
-                Amelio.
+                Apple announces it will buy NeXT for US$400-million and Jobs
+                will act as part-time product strategy advisor to Apple CEO
+                Gilbert Amelio.
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">July, 1997</p>
             <div class="content">
               <p>
@@ -168,8 +180,8 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Aug, 1997</p>
             <div class="content">
               <p>
@@ -179,8 +191,8 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Aug, 1998</p>
             <div class="content">
               <p>
@@ -189,22 +201,22 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Jan, 2000</p>
             <div class="content">
               <p>
-                Jobs becomes permanent chief executive of Apple and the company’s
-                board votes to give him a Gulfstream V airplane and options to
-                purchase 10 million shares in recognition of his service as
-                interim CEO during which time the company’s market cap went from
-                less than US$2-billion to more than US$16-billion. His salary
-                remains US$1 a year.
+                Jobs becomes permanent chief executive of Apple and the
+                company’s board votes to give him a Gulfstream V airplane and
+                options to purchase 10 million shares in recognition of his
+                service as interim CEO during which time the company’s market
+                cap went from less than US$2-billion to more than US$16-billion.
+                His salary remains US$1 a year.
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Sep, 2000</p>
             <div class="content">
               <p>
@@ -212,8 +224,8 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Oct, 2001</p>
             <div class="content">
               <p>
@@ -221,17 +233,18 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">2003</p>
             <div class="content">
               <p>
-                The iTunes Store opens, allowing users to buy and download music, audiobooks, movies and TV shows online.
+                The iTunes Store opens, allowing users to buy and download
+                music, audiobooks, movies and TV shows online.
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">2003</p>
             <div class="content">
               <p>
@@ -239,35 +252,41 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Aug, 2004</p>
             <div class="content">
               <p>
-                Jobs announces he underwent successful surgery to remove a cancerous tumor from his pancreas.
+                Jobs announces he underwent successful surgery to remove a
+                cancerous tumor from his pancreas.
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">June, 2005</p>
             <div class="content">
               <p>
-                Jobs delivers a commencement speech at Stanford University, telling the audience, “Remembering that that I’ll be dead soon is the most important tool I’ve ever encountered to help me make the big choices in life.”
+                Jobs delivers a commencement speech at Stanford University,
+                telling the audience, “Remembering that that I’ll be dead soon
+                is the most important tool I’ve ever encountered to help me make
+                the big choices in life.”
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">May, 2006</p>
             <div class="content">
               <p>
-                The Walt Disney Co. buys Pixar in an all-stock transaction worth US$7.4-billion and Jobs is appointed to Disney’s board of directors.
+                The Walt Disney Co. buys Pixar in an all-stock transaction worth
+                US$7.4-billion and Jobs is appointed to Disney’s board of
+                directors.
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Jan, 2007</p>
             <div class="content">
               <p>
@@ -275,8 +294,8 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">2008</p>
             <div class="content">
               <p>
@@ -284,26 +303,28 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Aug, 2008</p>
             <div class="content">
               <p>
-                The Bloomberg business news wire accidentally publishes an obituary of the still-alive Mr. Jobs before quickly deleting it.
+                The Bloomberg business news wire accidentally publishes an
+                obituary of the still-alive Mr. Jobs before quickly deleting it.
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Jan, 2009</p>
             <div class="content">
               <p>
-                Jobs takes leave for health reasons. COO Tim Cook leads the company in the interim.
+                Jobs takes leave for health reasons. COO Tim Cook leads the
+                company in the interim.
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">June, 2009</p>
             <div class="content">
               <p>
@@ -311,26 +332,32 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Aug, 2009</p>
             <div class="content">
               <p>
-                In an interview with the National Post, Mr. Wozniak said the biggest misconception about his former business partner was that he’s an “arrogant asshole and the media doesn’t take into acocunt that usually when he’s that way, he usually has some logical reasons for it.”
+                In an interview with the National Post, Mr. Wozniak said the
+                biggest misconception about his former business partner was that
+                he’s an “arrogant asshole and the media doesn’t take into
+                acocunt that usually when he’s that way, he usually has some
+                logical reasons for it.”
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">April, 2010</p>
             <div class="content">
               <p>
-                Apple begins selling the iPad, a 10-inch touchscreen tablet, and has an 84 percent share of the tablet market by year’s end and outsells Mac personal computers within a year of its release.
+                Apple begins selling the iPad, a 10-inch touchscreen tablet, and
+                has an 84 percent share of the tablet market by year’s end and
+                outsells Mac personal computers within a year of its release.
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">June, 2010</p>
             <div class="content">
               <p>
@@ -338,17 +365,19 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Feb 17, 2011</p>
             <div class="content">
               <p>
-                Jobs wears his signature black mock turtleneck and jeans to a dinner for technology leaders with U.S. President Barack Obama in Silicon Valley.
+                Jobs wears his signature black mock turtleneck and jeans to a
+                dinner for technology leaders with U.S. President Barack Obama
+                in Silicon Valley.
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Mar 2, 2011</p>
             <div class="content">
               <p>
@@ -356,8 +385,8 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Aug 24, 2011</p>
             <div class="content">
               <p>
@@ -365,33 +394,60 @@
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Oct 4, 2011</p>
             <div class="content">
               <p>
-                Apple announces the iPhone 4S, the fifth generation iPhone, scheduled for release on Oct. 14 in the United States.
+                Apple announces the iPhone 4S, the fifth generation iPhone,
+                scheduled for release on Oct. 14 in the United States.
               </p>
             </div>
           </div>
-  
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up">
             <p class="time">Oct 5, 2011</p>
             <div class="content">
               <p>
-                Apple releases a statement announcing Jobs’ death. “We are deeply saddened to announce that Steve Jobs passed away today,” the board says in the statement.
+                Apple releases a statement announcing Jobs’ death. “We are
+                deeply saddened to announce that Steve Jobs passed away today,”
+                the board says in the statement.
               </p>
             </div>
           </div>
         </div>
       </section>
-      
-      <div class="container book-div">
-        <p>If you want to know more about Steve's life you can read his <a href="https://www.biography.com/business-figure/steve-jobs" target="_blank">biography</a>.<br><br>You also can read <a href="https://www.amazon.com/gp/product/1451648537/ref=dbs_a_def_rwt_bibl_vppi_i1" target="_blank" id="tribute-link">"Steve Jobs" </a>by <a href="https://www.aspeninstitute.org/our-people/walter-isaacson/" target="_blank">Walter Isaacson</a>, an awesome biographical book written with the help of Steve and his family and friends.</p>
-        <a class="a-img" href="https://www.amazon.com/gp/product/1451648537/ref=dbs_a_def_rwt_bibl_vppi_i1" target="_blank"><img src="./images/book-cover.jpg" alt="Steve Jobs by Walter Isaacson cover"></a>
+
+      <div class="container book-div" data-aos="fade-up">
+        <p>
+          If you want to know more about Steve's life you can read his
+          <a
+            href="https://www.biography.com/business-figure/steve-jobs"
+            target="_blank"
+            >biography</a
+          >.<br /><br />You also can read
+          <a
+            href="https://www.amazon.com/gp/product/1451648537/ref=dbs_a_def_rwt_bibl_vppi_i1"
+            target="_blank"
+            id="tribute-link"
+            >"Steve Jobs" </a
+          >by
+          <a
+            href="https://www.aspeninstitute.org/our-people/walter-isaacson/"
+            target="_blank"
+            >Walter Isaacson</a
+          >, an awesome biographical book written with the help of Steve and his
+          family and friends.
+        </p>
+        <a
+          class="a-img"
+          href="https://www.amazon.com/gp/product/1451648537/ref=dbs_a_def_rwt_bibl_vppi_i1"
+          target="_blank"
+          ><img
+            src="./images/book-cover.jpg"
+            alt="Steve Jobs by Walter Isaacson cover"
+        /></a>
       </div>
-      
-      
     </div>
 
     <!-- FreeCodeCamp test -->

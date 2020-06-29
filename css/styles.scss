@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   margin: 0;
   color: white;
@@ -56,12 +56,19 @@ p {
   margin-bottom: 10em;
 
   .hero-text {
+    position: relative;
     padding-right: 4em;
     font-size: 10px;
     flex-grow: 1;
+    // this properties are going to be changed in the animation:
+    bottom: -50px;
+    opacity: 0;
+    animation: bottom-to-top 1s ease-out 1s;
+    animation-fill-mode: forwards;
   }
 
   .steve {
+    animation: fade 1s ease;
     height: 100vh;
   }
 }
@@ -104,10 +111,10 @@ p {
     padding: 5px 0;
 
     &:after {
-      content: "";
+      content: '';
       width: 4px;
       height: 100%;
-      background-color: $primary;
+      background-color: lightgray;
       position: absolute;
       left: -4px;
       top: 0;
@@ -117,12 +124,12 @@ p {
       position: relative;
 
       &:after {
-        content: "";
+        content: '';
         width: 1.25em;
         height: 1.25em;
         border-radius: 50%;
-        border: 4px solid $primary;
-        background-color: $dark-1;
+        border: 6px solid lightgray;
+        background-color: lightgray;
         position: absolute;
         left: -0.75em;
         top: 0.25em;
@@ -133,7 +140,6 @@ p {
         position: absolute;
         left: -7em;
         top: -0.43em;
-        opacity: 0.5;
         font-size: 0.8em;
       }
 
@@ -143,7 +149,7 @@ p {
         border-bottom: 1px dashed rgb(54, 54, 54);
 
         p {
-          font-weight: 100;
+          font-weight: 300;
           font-size: 1em;
         }
       }
@@ -196,6 +202,25 @@ p {
   }
 }
 
+/*----------keyframes----------*/
+
+@keyframes bottom-to-top {
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 /*----------media-queries----------*/
 
 @media (max-width: 900px) {
@@ -220,7 +245,7 @@ p {
   .hero-section {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url("/images/steve.jpg");
+      url('/images/steve.jpg');
     background-position: center;
     background-size: cover;
 
