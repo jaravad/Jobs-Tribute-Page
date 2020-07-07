@@ -75,8 +75,8 @@ p {
 }
 
 .hero-section .steve {
-  -webkit-animation: fade 1s ease;
-          animation: fade 1s ease;
+  -webkit-animation: fade 3s ease-in-out;
+          animation: fade 3s ease-in-out;
   height: 100vh;
 }
 
