@@ -44,6 +44,7 @@ p {
 .container {
   width: 90%;
   margin: 0 auto;
+  max-width: 1600px;
 }
 
 /* ----------hero-section---------- */
@@ -57,9 +58,8 @@ p {
 
   .hero-text {
     position: relative;
-    padding-right: 4em;
     font-size: 10px;
-    flex-grow: 1;
+    flex-basis: 60%;
     // this properties are going to be changed in the animation:
     bottom: -50px;
     opacity: 0;
@@ -69,6 +69,7 @@ p {
 
   .steve {
     animation: fade 3s ease-in-out;
+    object-fit: cover;
     height: 100vh;
   }
 }
@@ -169,6 +170,7 @@ p {
 .book-div {
   margin-bottom: 7em;
   text-align: center;
+  font-size: 1.3em;
   p {
     width: 60%;
     margin: 0 auto 3em;
@@ -194,11 +196,11 @@ p {
     max-width: 10em;
     display: block;
     margin: 0 auto;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s linear;
   }
 
   img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
 
@@ -235,6 +237,12 @@ p {
       height: initial;
     }
   }
+
+  .book-div {
+    p {
+      width: 90%;
+    }
+  }
 }
 
 @media (max-width: 450px) {
@@ -246,12 +254,15 @@ p {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
       url('/images/steve.jpg');
+    opacity: 0;
+    animation: fade 0.4s ease;
+    animation-fill-mode: forwards;
     background-position: center;
     background-size: cover;
 
     .hero-text {
       font-size: 7px;
-      width: 100%;
+      flex-basis: 100%;
       padding: 0;
     }
 
@@ -266,11 +277,5 @@ p {
 
   .timeline {
     font-size: 13px;
-  }
-
-  .book-div {
-    p {
-      width: 90%;
-    }
   }
 }

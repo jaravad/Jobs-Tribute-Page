@@ -42,6 +42,7 @@ p {
 .container {
   width: 90%;
   margin: 0 auto;
+  max-width: 1600px;
 }
 
 /* ----------hero-section---------- */
@@ -61,11 +62,9 @@ p {
 
 .hero-section .hero-text {
   position: relative;
-  padding-right: 4em;
   font-size: 10px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
   bottom: -50px;
   opacity: 0;
   -webkit-animation: bottom-to-top 1s ease-out 1s;
@@ -77,6 +76,8 @@ p {
 .hero-section .steve {
   -webkit-animation: fade 3s ease-in-out;
           animation: fade 3s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100vh;
 }
 
@@ -171,6 +172,7 @@ p {
 .book-div {
   margin-bottom: 7em;
   text-align: center;
+  font-size: 1.3em;
 }
 
 .book-div p {
@@ -200,15 +202,15 @@ p {
   max-width: 10em;
   display: block;
   margin: 0 auto;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
 }
 
 .book-div img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 /*----------keyframes----------*/
@@ -253,6 +255,9 @@ p {
     width: 40%;
     height: initial;
   }
+  .book-div p {
+    width: 90%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -263,12 +268,18 @@ p {
     width: 100%;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("/images/steve.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/images/steve.jpg");
+    opacity: 0;
+    -webkit-animation: fade 0.4s ease;
+            animation: fade 0.4s ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
     background-position: center;
     background-size: cover;
   }
   .hero-section .hero-text {
     font-size: 7px;
-    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     padding: 0;
   }
   .hero-section .steve {
@@ -279,9 +290,6 @@ p {
   }
   .timeline {
     font-size: 13px;
-  }
-  .book-div p {
-    width: 90%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
